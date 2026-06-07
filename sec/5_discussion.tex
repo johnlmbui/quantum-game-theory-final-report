@@ -1,0 +1,22 @@
+\section{Discussion}
+
+Within the EWL formulation~\cite{ewl}, admissible strategies are parameterized by continuous unitary transformations $U(\theta,\phi)$ acting on entangled quantum states. Consequently, equilibrium computation may be interpreted as optimization over continuous unitary strategy spaces rather than equilibrium search over finite discrete actions.
+
+For fixed opponent strategy $U_B$, player $A$ seeks to maximize the expected payoff functional
+
+\begin{equation}
+	U_A^*
+	\in
+	\arg\max_{U_A \in \mathcal{S}}
+	E[u_A(U_A,U_B;\gamma)],
+\end{equation}
+
+with an analogous optimization problem for player $B$. This induces a coupled nonconvex optimization problem in which equilibrium structure is influenced by both the degree of entanglement and the structure of the admissible strategy space.
+
+The surveyed literature suggests that entanglement may alter the strategic optimization landscape through nonclassical correlations in payoff generation.
+
+Maximal entanglement may transform the classical Nash equilibrium $(D,D)$ into the quantum equilibrium $(Q,Q)$, producing Pareto-superior outcomes~\cite{ewl}. However, the Benjamin--Hayden critique~\cite{benjamin} demonstrates that these conclusions are highly sensitive to assumptions regarding the admissible strategy space.
+
+This dependence is crucial because equilibrium stability becomes sensitive to parameterization choices, optimization constraints, accessible policy classes, and the representation of the payoff landscape. These observations parallel issues studied in statistical learning and continuous optimization, where convergence and stability are often governed by representation.
+
+These observations suggest that quantum strategic games may be interpreted through the lens of statistical learning and continuous optimization, where equilibrium behavior depends on both the payoff structure and parameterization of the admissible strategy space.

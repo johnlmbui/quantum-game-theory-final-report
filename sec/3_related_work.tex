@@ -1,0 +1,39 @@
+\section{Related Work}
+
+\subsection{Meyer and Quantum Strategies}
+
+Meyer~\cite{meyer} introduced one of the earliest demonstrations of quantum strategic advantage. He showed that a player with access to quantum strategies may outperform an opponent restricted to classical strategies.
+
+This work motivated the broader question of how strategic behavior changes when all players have access to quantum operations.
+
+\subsection{Eisert--Wilkens--Lewenstein Protocol}
+
+Eisert, Wilkens, and Lewenstein~\cite{ewl} proposed a quantum formulation of the prisoner's dilemma. Their model applies entanglement to the initial game state and allows players to choose unitary operations as strategies.
+
+Following the Eisert--Wilkens--Lewenstein (EWL) framework~\cite{ewl}, maximal entanglement together with a restricted admissible strategy space may replace the classical equilibrium $(D,D)$ with the cooperative quantum equilibrium $(Q,Q)$.
+
+This result is significant because it suggests that entanglement may alter equilibrium structure itself rather than merely changing payoff magnitudes. From an optimization perspective, the EWL construction may be viewed as modifying the structure of the strategic search space through nonclassical correlations.
+
+Within the EWL framework~\cite{ewl,sutton}, each player selects a parameterized unitary strategy of the form
+\[
+U(\theta,\phi),
+\]
+producing expected payoff functions of the form
+\[
+E[u_i(U_A,U_B;\gamma)].
+\]
+
+\subsection{Benjamin--Hayden Critique}
+
+Benjamin and Hayden~\cite{benjamin} argued that the equilibrium structure of the EWL framework depends critically on restrictions placed on the admissible strategy
+space. If players are allowed to use larger classes of unitary operations, cooperative equilibria may lose stability, counter-strategies may emerge, and equilibrium structure may become significantly more complex.
+
+Their critique reframes quantum game theory as a study of admissible strategy spaces and equilibrium stability rather than as a universal resolution of the prisoner's dilemma.
+
+From a learning and optimization perspective, this critique is vital because equilibrium stability becomes sensitive to representational assumptions, optimization constraints, and accessible policy classes. Consequently, quantum game theory may also be interpreted as a study of how strategic structure changes under different parameterizations of the admissible strategy space.
+
+\subsection{Learning and Optimization}
+
+Recent work in reinforcement learning and multi-agent learning~\cite{sutton,busoniu} motivates interpreting equilibrium search as optimization over continuous policy spaces. Because quantum strategies are parameterized by continuous unitary matrices, equilibrium computation resembles policy optimization in machine learning.
+
+Although the original EWL framework was formulated primarily within quantum information theory, its structure closely resembles optimization over continuous policy spaces. Parameterized quantum strategies behave similarly to differentiable policy representations studied in reinforcement learning and continuous optimization.

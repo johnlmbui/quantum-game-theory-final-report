@@ -1,0 +1,11 @@
+\section{Introduction}
+
+The prisoner's dilemma is one of the canonical models in non-cooperative game theory that has become a central model for studying strategy selection and equilibrium stability~\cite{ferguson}. Although mutual cooperation maximizes collective utility, rational players are driven toward mutual defection, producing a Nash equilibrium that is Pareto inefficient.
+
+Quantum game theory extends classical strategic games into the quantum domain by replacing classical actions with operations on quantum states. In the Eisert--Wilkens--Lewenstein (EWL) formulation of the prisoner's dilemma, players apply local unitary transformations to entangled qubits prior to measurement~\cite{ewl}. The resulting payoff distribution depends on both local unitary operations and the nonclassical correlations induced by entanglement.
+
+Within quantum strategic games, entanglement changes how stable strategic outcomes emerge compared with classical game settings. Under maximal entanglement and restricted strategy spaces, the classical equilibrium $(D,D)$ is replaced by a cooperative quantum equilibrium $(Q,Q)$ which is both Pareto optimal and strategically stable. However, subsequent work by Benjamin and Hayden showed that this equilibrium depends critically on assumptions regarding admissible strategy classes. Enlarging the strategy space introduces counter-strategies capable of destabilizing the EWL equilibrium.
+
+From a computational perspective, quantum strategic games may also be interpreted as optimization problems over continuous unitary strategy spaces. Equilibrium search therefore resembles multi-agent optimization in which players iteratively adapt parameterized strategies to maximize expected payoff~\cite{jankowski,lau,ikeda}. This interpretation connects quantum game theory to reinforcement learning and policy optimization.
+
+The analysis investigates the relationship between entanglement, equilibrium stability, optimization, and statistical learning in quantum strategic games. More precisely, the structure of the strategy space, the dependence of equilibrium behavior on admissible unitary operations, and the interpretation of quantum equilibrium search as a continuous learning problem.
